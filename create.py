@@ -3,7 +3,7 @@ from task import *
 import days
 
 
-def create():
+def Create():
     mode = input("deadline or weekly?")
     if mode == "deadline":
         u_task = input("enter your task: \n")
@@ -15,6 +15,7 @@ def create():
 
         # appending tasks and time to a dict
         days.deadlines[u_task] = u_date
+        print(days.deadlines)
 
     elif mode == "weekly":
         u_task = input("enter your task: \n")
@@ -27,4 +28,5 @@ def create():
         # appending tasks and time to a dict
         list_of_u_day = u_day.split(",")
         for x in list_of_u_day:
-            days.days_of_week[x].append(u_task)
+            index_x = days.days_of_week_str.index(x)
+            days.days_of_week[index_x].append(u_task)

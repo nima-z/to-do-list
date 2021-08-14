@@ -1,4 +1,4 @@
-monday = ["french", "musix"]
+monday = []
 tuesday = []
 wednesday = []
 thursday = []
@@ -7,6 +7,15 @@ saturday = []
 sunday = []
 
 days_of_week = [monday, tuesday, wednesday, thursday, friday, saturday, sunday]
+days_of_week_str = [
+    "monday",
+    "tuesday",
+    "wednesday",
+    "thursday",
+    "friday",
+    "saturday",
+    "sunday",
+]
 
 deadlines = {}
 weekly = {
@@ -18,5 +27,3 @@ weekly = {
     "saturday": saturday,
     "sunday": sunday,
 }
-
-print(weekly)
